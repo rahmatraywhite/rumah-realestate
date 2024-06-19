@@ -41,7 +41,7 @@ const menu: MenuItem[] = [
 const MenuHome: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto pb-8 items-center flex flex-col justify-center">
-      <ul className="flex space-x-6">
+      <ul className="flex flex-wrap justify-center space-x-2 md:space-x-6">
         {menu.map((item, index) => (
           <li key={index}>
             <Link href={`/${item.link}`}>

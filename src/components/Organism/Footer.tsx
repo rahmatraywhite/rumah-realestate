@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div
-        className="w-full bg-no-repeat bg-cover bg-center h-[564px] absolute top-32 left-0 z-0"
+        className="w-full bg-no-repeat bg-cover bg-center h-[264px] md:h-[564px] absolute top-32 left-0 z-0"
         style={{ backgroundImage: `url(${bgFooter.src})` }}></div>
     </footer>
   );

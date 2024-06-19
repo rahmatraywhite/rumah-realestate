@@ -54,9 +54,8 @@ export default function Navbar() {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-              navbar ? 'block' : 'hidden'
-            }`}>
+            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'block' : 'hidden'
+              }`}>
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <Link href="/dijual" className="text-white text-sm font-medium">
                 Dijual
@@ -82,7 +81,7 @@ export default function Navbar() {
                 Jadi Agen
               </Button>
               <Button className="bg-[#FFE512] w-full text-[#3A3A3A] px-7 text-sm hover:bg-[#FFE512]">
-                Buat Akun
+                Jual Rumah
               </Button>
             </div>
           </div>
@@ -94,7 +93,7 @@ export default function Navbar() {
             Jadi Agen
           </Button>
           <Button className="bg-[#FFE512] text-[#3A3A3A] px-7 text-sm hover:bg-[#FFE512]">
-            Buat Akun
+            Jual Rumah
           </Button>
         </div>
       </div>
