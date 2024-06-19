@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import Verif from '@/assets/icons/verif1.svg';
@@ -14,6 +16,10 @@ import {
 import CardPopuler from './CardPopuler';
 
 const PropertiBaru: React.FC = () => {
+  const [activeFilter, setActiveFilter] = useState<number | null>(null);
+  const handleFilterClick = (index: number) => {
+    setActiveFilter(index === activeFilter ? null : index);
+  };
   return (
     <main className="flex flex-col w-full">
       <div className="w-full max-w-7xl py-[62px] px-4 md:px-0 mx-auto">
@@ -123,8 +129,14 @@ const PropertiBaru: React.FC = () => {
               {Array.from({ length: 15 }).map((_, index) => (
                 <CarouselItem
                   key={index}
-                  className="gap-5 md:basis-1/3 lg:basis-[10%]">
-                  <div className="p-2 border border-[#8F8F8F] text-center rounded-[6px] border-opacity-50">
+                  className="gap-5 md:basis-1/3 lg:basis-[10%]"
+                  onClick={() => handleFilterClick(index)}>
+                  <div
+                    className={`p-2 border cursor-pointer text-center rounded-[6px] border-opacity-50 ${
+                      activeFilter === index
+                        ? 'border-[#EE4336] bg-[#EE4336] text-white'
+                        : 'border-[#8F8F8F]'
+                    }`}>
                     <p>Tangerang</p>
                   </div>
                 </CarouselItem>
@@ -136,7 +148,6 @@ const PropertiBaru: React.FC = () => {
             </div>
           </div>
         </Carousel>
-
         <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[18px] mt-7">
           <CardPopuler />
           <CardPopuler />
