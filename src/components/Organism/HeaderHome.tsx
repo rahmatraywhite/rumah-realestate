@@ -1,9 +1,9 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Background1 from '../../assets/img1.png';
-import Background2 from '../../assets/img2.png';
-import Background3 from '../../assets/img1.png';
+import Background1 from '@/assets/img1.png';
+import Background2 from '@/assets/img2.png';
+import Background3 from '@/assets/img1.png';
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import SearchHouser from '../Molecules/SearchHouse';
 
@@ -40,7 +40,7 @@ const HeaderHome: React.FC = () => {
   };
 
   return (
-    <header className="relative w-full h-screen md:h-[500px] flex justify-center items-center overflow-hidden">
+    <header className="relative w-full h-screen md:h-[600px] flex justify-center items-center overflow-hidden">
       <div
         className="absolute inset-0 flex transition-transform duration-1000"
         style={{

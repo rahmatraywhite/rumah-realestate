@@ -1,4 +1,3 @@
-import MenuHome from '@/components/Molecules/MenuHome';
 import FeaturedListing from '@/components/Organism/FeaturedListing';
 import HeaderHome from '@/components/Organism/HeaderHome';
 import HousePopuler from '@/components/Organism/HousePopuler';
@@ -11,7 +10,6 @@ export default function Home() {
       <SelectType />
       <FeaturedListing />
       <HousePopuler />
-      <MenuHome />
     </main>
   );
 }
