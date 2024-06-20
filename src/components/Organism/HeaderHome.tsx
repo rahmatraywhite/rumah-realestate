@@ -5,7 +5,7 @@ import Background1 from '@/assets/img1.png';
 import Background2 from '@/assets/img2.png';
 import Background3 from '@/assets/img1.png';
 import { Plus_Jakarta_Sans } from 'next/font/google';
-import SearchHouser from '../Molecules/SearchHouse';
+import SearchProperty from '../Molecules/SearchProperty';
 
 const plusJakarta = Plus_Jakarta_Sans({ subsets: ['latin'] });
 
@@ -68,7 +68,7 @@ const HeaderHome: React.FC = () => {
           <p className="text-[52px] font-extrabold leading-[59px]">
             dream home
           </p>
-          <SearchHouser />
+          <SearchProperty />
         </div>
       </main>
       <div className="absolute bottom-5 flex space-x-3">
