@@ -2,14 +2,28 @@ import Image from 'next/image';
 import Featured from '@/assets/featured.png';
 import Tag from '@/assets/icons/tag-rwi.svg';
 import Verif from '@/assets/icons/verif.svg';
-import { Heart, MapPin } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 import { Button } from '../ui/button';
 import { Badge } from '@/components/ui/badge';
+import Link from 'next/link';
+import { FaHeart } from 'react-icons/fa';
 
 const CardFeatured: React.FC = () => {
   return (
-    <div className="flex flex-col relative px-2 py-3 rounded-sm bg-[#eaeaea]">
-      <Image src={Featured} alt="image" className="w-full" height={180} />
+    <div className="flex flex-col relative px-2 py-3 rounded-sm bg-[#FAFAFA] shadow-md">
+      <Link
+        href="*"
+        className="overflow-hidden relative block w-full h-[180px]">
+        <div className="w-full h-full duration-500 transform hover:scale-110">
+          <Image
+            src={Featured}
+            alt="image"
+            layout="fill"
+            objectFit="cover"
+            className="w-full h-full"
+          />
+        </div>
+      </Link>
       <Badge className="mt-2 left-5 top-5 absolute text-[9px] flex gap-1 bg-[#EE4336] hover:bg-[#EE4336] px-2">
         <Image src={Verif} alt="image" width={16} height={16} />
         Featured
@@ -19,12 +33,14 @@ const CardFeatured: React.FC = () => {
           Rp. 75 Miliyar
         </h2>
         <Button className="flex p-2 bg-transparent hover:bg-transparent items-center justify-center rounded-full border-2 border-[#D5D5D5]">
-          <Heart size={20} className="text-[#BABABA] hover:text-[#EE4336]" />
+          <FaHeart size={20} className="text-[#BABABA] hover:text-[#EE4336]" />
         </Button>
       </div>
-      <p className="text-[#8F8F8F] px-2 my-2 font-bold leading-[27px]">
+      <Link
+        href="*"
+        className="text-[#8F8F8F] px-2 my-2 font-bold leading-[27px]">
         Georgeus Villa Bay
-      </p>
+      </Link>
       <div className="flex px-2 items-center mb-4 gap-[6px]">
         <MapPin size={20} className="text-[#8F8F8F]" />
         <p className="text-[#8F8F8F]  text-xs leading-[27px]">

@@ -15,8 +15,8 @@ const FaqDeveloper: React.FC = () => {
       <Accordion
         type="single"
         collapsible
-        className="w-full flex flex-col px-6 gap-4">
-        <AccordionItem value="item-1">
+        className="w-full flex flex-col px-2 gap-4">
+        <AccordionItem className="bg-[#fff] px-6 py-[18px]" value="item-1">
           <AccordionTrigger className="text-accent text-xl tracing-[-0.4px] font-bold hover:no-underline">
             Apa keuntungan membeli rumah baru?
           </AccordionTrigger>
@@ -26,7 +26,7 @@ const FaqDeveloper: React.FC = () => {
             Maecenas tempus, tellus eget.
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="item-2">
+        <AccordionItem className="bg-[#fff] px-6 py-[18px]" value="item-2">
           <AccordionTrigger className="text-accent text-xl tracing-[-0.4px] font-bold hover:no-underline">
             Bagaimana cara membeli rumah KPR?
           </AccordionTrigger>
@@ -36,7 +36,7 @@ const FaqDeveloper: React.FC = () => {
             Maecenas tempus, tellus eget.
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="item-3">
+        <AccordionItem className="bg-[#fff] px-6 py-[18px]" value="item-3">
           <AccordionTrigger className="text-accent text-xl tracing-[-0.4px] font-bold hover:no-underline">
             Apa saja biaya membeli rumah?
           </AccordionTrigger>

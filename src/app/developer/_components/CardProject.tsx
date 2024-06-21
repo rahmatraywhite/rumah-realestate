@@ -20,15 +20,18 @@ const CardProject: React.FC<CardProjectTypes> = ({ developer }) => {
     <div className="bg-[#FAFAFA] px-[10px] py-3 rounded-b-sm">
       <Link
         href={`/developer/${developer.id}`}
-        className="w-full flex duration-300 hover:scale-105 items-center justify-center relative">
-        <Image
-          src={developer.image}
-          alt="image"
-          className="w-full "
-          height={180}
-        />
-        <div className="absolute top-0 bg-white px-3 py-4 rounded-b-xl">
-          <Image src={developer.logo} alt="image" width={56} height={56} />
+        className="overflow-hidden relative block w-full h-[180px]">
+        <div className="w-full h-full duration-500 transform hover:scale-110">
+          <Image
+            src={developer.image}
+            alt="image"
+            layout="fill"
+            objectFit="cover"
+            className="w-full h-full"
+          />
+          <div className="absolute left-1/2 top-7 transform -translate-x-1/2 translate-y-[-50%] bg-white px-3 py-4 rounded-b-xl">
+            <Image src={developer.logo} alt="logo" width={56} height={56} />
+          </div>
         </div>
       </Link>
       <div className="flex mt-6 justify-between items-center">
