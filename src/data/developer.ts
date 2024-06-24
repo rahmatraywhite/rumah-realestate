@@ -3,6 +3,7 @@ import Dev2 from '@/assets/dev2.png';
 import Dev3 from '@/assets/dev3.png';
 import Dev4 from '@/assets/dev4.png';
 import logo from '@/assets/lippo.png';
+import Avatar from '@/assets/avatar.png';
 
 export const developers = [
   {
@@ -12,6 +13,9 @@ export const developers = [
     price: 'Rp 500.000.000',
     title: 'Rumah Modern Buah Batu',
     location: 'Buah Batu, Bandung',
+    desc: 'Rumah bergaya Cape Cod 4 kamar tidur yang indah dengan garasi yang terletak di sisi barat Inggris Baru sekarang ada di pasaran! Terletak hanya beberapa menit dari semua transit utama dan pusat perbelanjaan. Properti ini menawarkan banyak hal dengan halaman belakang pribadi dan area teras, yang terhubung ke salah satu taman kota. Interiornya menampilkan ruang tamu interior seluas lebih dari 1.000 kaki persegi, ruang makan di dapur, ruang makan dengan jendela yang menghadap ke halaman belakang. Cepat dan jadwalkan pertunjukan Anda hari ini sebelum melewatkan penawaran luar biasa ini!',
+    agentName: 'Mey chan gunadi',
+    agentImage: Avatar,
   },
   {
     id: 2,

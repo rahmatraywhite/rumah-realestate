@@ -48,9 +48,7 @@ export default function Navbar() {
                 className="text-white text-sm font-medium">
                 Properti Baru
               </Link>
-              <Link
-                href="/cari-agen"
-                className="text-white text-sm font-medium">
+              <Link href="/agen" className="text-white text-sm font-medium">
                 Cari Agen
               </Link>
             </ul>
