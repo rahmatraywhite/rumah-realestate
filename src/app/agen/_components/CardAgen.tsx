@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Rwi from '@/assets/icons/rwi.svg';
 import { Button } from '@/components/ui/button';
 
-const CardAgen = () => {
+const CardAgen: React.FC = (): JSX.Element => {
   return (
     <div className="px-[18px] rounded-[10px] shadow-lg bg-[#FFFFFF] py-[21px]">
       <div className="flex items-center gap-[15px]">
@@ -57,7 +57,7 @@ const CardAgen = () => {
       <Button className="w-full font-bold bg-[#17A759] hover:bg-green-700">
         Hubungi agen
       </Button>
-      <Button className="w-full border-2 mb-3 font-bold text-[#8F8F8F] border-[#Bababa] bg-transparent hover:bg-transparent mt-3">
+      <Button className="w-full border-2 mb-3 font-bold text-[#8F8F8F] border-[#Bababa] bg-transparent hover:bg-gray-100 mt-3">
         Lihat profil
       </Button>
     </div>
